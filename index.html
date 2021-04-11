@@ -14,13 +14,24 @@
 
         function updateImage() {
 
-           var source1 = "http://amministrazioneaperta.comune.monfalcone.go.it/windEth-jpg.php"
-           var source2 = "http://amministrazioneaperta.comune.monfalcone.go.it/monfalcone-cam-marinaJulia2.php"
-           obj1 = document.webcam1;
-           obj1.src = source1 + "?" + Math.random();
+           var sourceMJW1 = "https://amministrazioneaperta.comune.monfalcone.go.it/windEth-jpg.php"
+           var sourceMJW2 = "https://amministrazioneaperta.comune.monfalcone.go.it/monfalcone-cam-marinaJulia2.php"
+           var sourceTSW1 = "https://www.cisartrieste.it/meteo/grisa/cam1.jpg"
+           var sourceTSW2 = "https://www.cisartrieste.it/meteo/grisa/cam2.jpg"
+           objMJW1 = document.webcamMJ1;
+           objMJW1.src = sourceMJW1 + "?" + Math.random();
         
-           obj2 = document.webcam2;
-           obj2.src = source2 + "?" + Math.random();
+           objMJW2 = document.webcamMJ2;
+           objMJW2.src = sourceMJW2 + "?" + Math.random();
+
+           objTSW1 = document.webcamMJ1;
+           objTSW1.src = sourceTSW1 + "?" + Math.random();
+        
+           objTSW2 = document.webcamMJ2;
+           objTSW2.src = sourceTSW2 + "?" + Math.random();
+
+
+
            //Following statement sets the delay before the function will
         
            //call itself again (in milliseconds)
@@ -36,19 +47,35 @@
 
         <div class="row marketing">
             <div class="col-lg-6">
-              <h4>Marina Julia Webcam beach</h4>
+              <h4 align="center">Marina Julia -- beach</h4>
               
-              <img src = "http://amministrazioneaperta.comune.monfalcone.go.it/windEth-jpg.php" name="webcam1" width="800" height="500">
+              <img src = "https://amministrazioneaperta.comune.monfalcone.go.it/windEth-jpg.php" name="webcamMJ1" align="center" width="800" height="500">
              
             </div>
     
             <div class="col-lg-6">
-              <h4>Marina Julia Kite zone</h4>
+              <h4 align="center">Marina Julia -- Kite zone</h4>
               
-              <img src = "http://amministrazioneaperta.comune.monfalcone.go.it/monfalcone-cam-marinaJulia2.php" name="webcam2" width="800" height="500">
+              <img src = "https://amministrazioneaperta.comune.monfalcone.go.it/monfalcone-cam-marinaJulia2.php" name="webcamMJ2" align="center" width="800" height="500">
               
             </div>
           </div>
+
+          <div class="row marketing">
+            <div class="col-lg-6">
+              <h4 align="center">Barcola -- direzione Trieste</h4>
+              
+              <img src = https://www.cisartrieste.it/meteo/grisa/cam1.jpg name="webcamTS1" align="center" width="800" height="500">
+             
+            </div>
     
+            <div class="col-lg-6">
+              <h4 align="center">Barcola -- direzione Grado</h4>
+              
+              <img src = https://www.cisartrieste.it/meteo/grisa/cam2.jpg name="webcamTS2" align="center" width="800" height="500">
+              
+            </div>
+          </div>
+      
     </body>
 </html>
